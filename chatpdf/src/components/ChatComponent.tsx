@@ -5,18 +5,14 @@ import { Button } from "./ui/button";
 import { Send } from "lucide-react";
 import { Input } from "./ui/input";
 
+const ChatComponent = () => {
+  const { input, handleInputChange, handleSubmit } = useChat();
 
-type Props = { pdf_url: string };
-
-const ChatComponent = ({ pdf_url }: Props) => {
-    const {input, handleInputChange, handleSubmit} = useChat();
   return (
-    <div className="relative max-h-screen ">
-          {/* header */}
+    <div className="relative max-h-screen">
       <div className="sticky top-0 inset-x-0 p-2 h-fit">
         <h3 className="text-xl font-bold">Chat</h3>
       </div>
-      {/* message list */}
 
       <form
         onSubmit={handleSubmit}
