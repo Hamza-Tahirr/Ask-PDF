@@ -13,7 +13,7 @@ const ChatSideBar = (props : Props) => {
         <div className="w-full h-screen p-6 text-gray-200 bg-gray-900">
             <Button className="w-full font-bold text-lg">
                 <FileText className="mr-2 w-4 h-4" />
-                Chat PDF
+                Ask PDF
             </Button>
             <div className="flex max-h-screen pb-20 flex-col gap-2 mt-4">
             <Button className="w-full border-dashed border-white border">
